@@ -13,9 +13,33 @@ const baloo = Baloo_2({
 });
 
 export const metadata: Metadata = {
-  title: "Cookieteer",
-  description: "Custom decorated cookies baked in Toronto with love.",
+  openGraph: {
+    title: "Cookieteer — Designer Cookies",
+    description:
+      "Hand-piped, custom decorated cookies baked fresh in Toronto. Perfect for events, celebrations, and gifts.",
+    url: "https://your-domain.com",
+    siteName: "Cookieteer",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Cookieteer Designer Cookies — Toronto",
+      },
+    ],
+    locale: "en_CA",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Cookieteer — Designer Cookies",
+    description:
+      "Custom sugar cookies handmade in Toronto. Magical designs for every occasion.",
+    images: ["/og-image.png"],
+  },
 };
+
 
 export default function RootLayout({
   children,
