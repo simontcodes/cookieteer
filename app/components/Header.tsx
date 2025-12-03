@@ -10,7 +10,7 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-3">
           <div className="h-12 w-[190px] overflow-hidden flex items-center">
             <Image
-              src="/logo.png"
+              src="/Logo.png"
               alt="Cookieteer logo"
               width={500}
               height={200}
